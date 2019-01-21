@@ -13,7 +13,7 @@ The syntax shown in this document is tentative. Only used as a proof of concept.
 
 ## Features
 
-### Choice
+### Choices
 
 #### - If
 
