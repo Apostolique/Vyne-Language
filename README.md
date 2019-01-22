@@ -92,7 +92,7 @@ Type 2 doesn't have the ability to produce side effects. Takes read-only input p
 
 For example, the following function takes 2 input variables and returns 3 output variables:
 
-```
+```csharp
 var a;
 var b;
 
@@ -110,7 +110,7 @@ The original variables `a` and `b` are not modified. They are passed by value.
 
 The variables `c`, `d`, `e` are write-only from the function's point of view.
 
-```
+```csharp
 var a;
 var b;
 
