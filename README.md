@@ -13,6 +13,10 @@ The syntax shown in this document is tentative. Only used as a proof of concept.
 
 ## Features
 
+### Comments
+
+Support for single line comments and nested multiline comments.
+
 ### Choices
 
 #### - If
