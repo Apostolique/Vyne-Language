@@ -22,6 +22,28 @@ The syntax shown in this document is tentative. Only used as a proof of concept.
 
 Support for single line comments and nested multiline comments.
 
+The current syntax for multiline comments:
+
+```
+/*
+    This is inside the comment
+    /*
+        You can insert something here.
+    */
+    This is a comment since the nested comment is parsed correctly.
+*/
+```
+
+There is also a way to break out of nested comments:
+
+```
+/*
+    /*
+        /*
+            Comment here
+*//
+```
+
 ### Choices
 
 #### - If
