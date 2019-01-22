@@ -1,5 +1,5 @@
 # Vyne-Language
-Definition for the Vyne Programming language.
+Definition for the Vyne Programming language. The Vyne language is an imaginary programming language. There are no known compilers that exist yet.
 
 ## Goals
 
