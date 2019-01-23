@@ -67,7 +67,7 @@ Works like other languages. Will be closer to functional languages with pattern 
 
 ### Loops
 
-#### - While
+#### :small_orange_diamond: While
 
 The while loop has extra features compared to other languages.
 
