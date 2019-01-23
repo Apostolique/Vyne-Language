@@ -226,7 +226,7 @@ Currently proposed boolean operators:
 !>
 ```
 
-`!<` and `!>` are equivalent to `>=` and `<=`. In some cases, it is useful to represent logic using one or the other to make an algorithm purpose clearer.
+`!<` and `!>` are equivalent to `>=` and `<=`. In some cases, it is useful to represent logic using one or the other to make an algorithm's purpose clearer.
 
 Boolean operators have syntactic sugar to make it easier to write common logic using `&` and `|`:
 
