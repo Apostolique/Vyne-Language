@@ -188,3 +188,20 @@ Type 3 returns as a branching path. Each path can have it's own return signature
 #### - Function type 4
 
 Type 4 is similar to a goto. Takes input parameters. Control flow is never returned.
+
+### Boolean operators
+
+Currently proposed boolean operators:
+
+```
+==
+<
+>
+!=
+<=
+>=
+!<
+!>
+```
+
+`!<` and `!>` are equivalent to `>=` and `<=`. In some cases, it is useful to represent logic using one or the other to make an algorithm purpose clearer.
