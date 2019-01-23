@@ -216,3 +216,16 @@ Currently proposed boolean operators:
 ```
 
 `!<` and `!>` are equivalent to `>=` and `<=`. In some cases, it is useful to represent logic using one or the other to make an algorithm purpose clearer.
+
+Boolean operators have syntactic sugar to make it easier to write common logic using `&` and `|`:
+
+```
+0 < i &< 10
+becomes
+0 < i && i < 10
+```
+```
+0 < i |< 10
+becomes
+0 < i || i < 10
+```
