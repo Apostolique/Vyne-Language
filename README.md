@@ -67,7 +67,7 @@ while (condition) {
 else while (condition) {
 
 }
-else {
+else loop {
 
 }
 ```
@@ -78,7 +78,24 @@ It starts by checking the first condition. If it is true, it will enter that bra
 
 If the first condition was false, it will check the second condition. If it is true, it will enter that branch until the condition becomes false.
 
-If the second condition was also false, it will execute the else. The else here is an infinite loop that requires manual breaking out.
+If the second condition was also false, it will execute the final else loop. The else loop here is an infinite loop that requires manual breaking out.
+
+This new while loop is now a special case of the if statement. It makes it possible to have this syntax:
+
+```csharp
+if (condition) {
+
+}
+else while (condition) {
+
+}
+else if (condition) {
+
+}
+else {
+
+}
+```
 
 #### - For
 
