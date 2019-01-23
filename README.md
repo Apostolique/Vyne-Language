@@ -57,11 +57,11 @@ There is also a way to break out of nested comments:
 
 ### Choices
 
-#### - If
+#### :small_orange_diamond: If
 
 Works like other languages.
 
-#### - Switch
+#### :small_orange_diamond: Switch
 
 Works like other languages. Will be closer to functional languages with pattern matching.
 
@@ -108,15 +108,15 @@ else {
 }
 ```
 
-#### - For
+#### :small_orange_diamond: For
 
 Works like other languages.
 
-#### - Do While
+#### :small_orange_diamond: Do While
 
 Works like other languages.
 
-#### - Loop
+#### :small_orange_diamond: Loop
 
 An infinite loop that requires manual breaking out.
 
@@ -126,17 +126,17 @@ loop {
 }
 ```
 
-#### - Foreach
+#### :small_orange_diamond: Foreach
 
 Most likely will work like other languages.
 
 ### Subroutines
 
-#### - Function type 1
+#### :small_orange_diamond: Function type 1
 
 Type 1 works similar to functions in other languages. Takes input parameters and returns output parameters. Control flow is returned back to the caller.
 
-#### - Function type 2
+#### :small_orange_diamond: Function type 2
 
 Type 2 doesn't have the ability to produce side effects. Takes read-only input parameters and returns write-only output parameters. If the same variable is passed as an input and output, then some optimizations can be applied. For example a variable could end up being passed as a reference, or it could be passed by value with deep copy. Control flow is returned back to the caller.
 
@@ -190,13 +190,13 @@ This last one could be used to swap variables.
 
 A type 2 function can only call other type 2 functions to preserve the no side effect property.
 
-#### - Function type 3
+#### :small_orange_diamond: Function type 3
 
 Type 3 returns as a branching path. Each path can have it's own return signature. If the caller doesn't have a matching return branch, control percolates back through subroutine calls and/or nested blocks until a matching branch is found or until the end of the main program is reached, at which point the program is forcibly stopped with a suitable error message.
 
 ![](https://i.imgur.com/2vUwXgY.png)
 
-#### - Function type 4
+#### :small_orange_diamond: Function type 4
 
 Type 4 is similar to a goto. Takes input parameters. Control flow is never returned.
 
