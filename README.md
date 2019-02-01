@@ -22,6 +22,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [Function type 3](#small_orange_diamond-function-type-3)
     * [Function type 4](#small_orange_diamond-function-type-4)
   * [Boolean operators](#boolean-operators)
+  * [Scope](#scope)
 
 ## Goals
 
@@ -240,3 +241,7 @@ becomes
 becomes
 0 < i || i < 10
 ```
+
+### Scope
+
+The concept of a scope is very important in the Vyne language. Where does something exist? Where something lives needs to always be explicit. A global variable would only be a variable that is made explicitly accessible within other scopes.
