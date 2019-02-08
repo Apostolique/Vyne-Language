@@ -152,21 +152,25 @@ else coil (condition) {
 }
 ```
 
-An easy example for this loop would be this scenario. You have a list populated by 0s, 1s, and 2s. You want to break on the first 2. You also want to do a specific action for 0s and 1s. Using the coil loop, we get:
+The coil loop is equivalent to this:
 
 ```csharp
-var funList = [0, 1, 1, 0, 0, 0, 1, 1, 1, 2, 1, 0];
-coil (funList.Head == 0) {
-    //Do something we got a 0.
-    funList = funList.Tail;
-}
-else coil (funList.Head == 1) {
-    //Do something we got a 1.
-    funList = funList.Tail;
+loop {
+    while (condition) {
+        //Do something
+    }
+    else while (condition) {
+        //Do something
+    }
+    else {
+        break;
+    }
 }
 ```
 
-To make this be more useful, the syntax should be extended to have common preprocess and postprocess code blocks. This would make it possible to have the `funList = funList.Tail;` line in a postprocess code block.
+To make this be more useful, the syntax should be extended to have common preprocess and postprocess code blocks. This would make it possible extract common code between the different branches.
+
+**Note**: This loop will likely not make it into the Vyne language, but it is still interesting to think about.
 
 #### :small_orange_diamond: Foreach
 
