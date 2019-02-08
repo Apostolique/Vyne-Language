@@ -168,7 +168,7 @@ loop {
 }
 ```
 
-To make this be more useful, the syntax should be extended to have common preprocess and postprocess code blocks. This would make it possible extract common code between the different branches.
+To make this be more useful, the syntax should be extended to have common preprocess and postprocess code blocks. This would make it possible to extract common code between the different branches.
 
 **Note**: This loop will likely not make it into the Vyne language, but it is still interesting to think about.
 
