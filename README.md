@@ -15,6 +15,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [for](#small_orange_diamond-for)
     * [do while](#small_orange_diamond-do-while)
     * [loop](#small_orange_diamond-loop)
+    * [coil](#small_orange_diamond-coil)
     * [foreach](#small_orange_diamond-foreach)
   * [Subroutines](#subroutines)
     * [Function type 1](#small_orange_diamond-function-type-1)
@@ -137,6 +138,35 @@ loop {
 
 }
 ```
+
+#### :small_orange_diamond: Coil
+
+Now this is a really fancy loop. This will loop until all conditions are false.
+
+```csharp
+coil (condition) {
+
+}
+else coil (condition) {
+
+}
+```
+
+An easy example for this loop would be this scenario. You have a list populated by 0s, 1s, and 2s. You want to break on the first 2. You also want to do a specific action for 0s and 1s. Using the coil loop, we get:
+
+```csharp
+var funList = [0, 1, 1, 0, 0, 0, 1, 1, 1, 2, 1, 0];
+coil (funList.Head == 0) {
+    //Do something we got a 0.
+    funList = funList.Tail;
+}
+else coil (funList.Head == 1) {
+    //Do something we got a 1.
+    funList = funList.Tail;
+}
+```
+
+To make this be more useful, the syntax should be extended to have common preprocess and postprocess code blocks. This would make it possible to have the `funList = funList.Tail;` line in a postprocess code block.
 
 #### :small_orange_diamond: Foreach
 
