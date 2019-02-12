@@ -78,7 +78,7 @@ There is also a way to break out of nested comments:
 
 #### :small_orange_diamond: If
 
-```
+```csharp
 if: condition {
 
 }
