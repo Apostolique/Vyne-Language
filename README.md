@@ -13,8 +13,8 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
   * [Loops](#loops)
     * [while](#small_orange_diamond-while)
     * [for](#small_orange_diamond-for)
-    * [do while](#small_orange_diamond-do-while)
     * [loop](#small_orange_diamond-loop)
+    * [do while](#small_orange_diamond-do-while)
     * [coil](#small_orange_diamond-coil)
     * [foreach](#small_orange_diamond-foreach)
   * [Subroutines](#subroutines)
@@ -125,10 +125,6 @@ else {
 
 Works like other languages.
 
-#### :small_orange_diamond: Do While
-
-Works like other languages.
-
 #### :small_orange_diamond: Loop
 
 An infinite loop that requires manual breaking out.
@@ -136,6 +132,20 @@ An infinite loop that requires manual breaking out.
 ```csharp
 loop {
 
+}
+```
+
+#### :small_orange_diamond: Do While
+
+Can be done using loop.
+
+```
+loop {
+    //Some code here.
+    
+    if (condition) {
+        break;
+    }
 }
 ```
 
