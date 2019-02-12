@@ -17,6 +17,8 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [do while](#small_orange_diamond-do-while)
     * [coil](#small_orange_diamond-coil)
     * [foreach](#small_orange_diamond-foreach)
+  * [General Statements](#general-statements)
+    * [do](#small_orange_diamond-do)
   * [Subroutines](#subroutines)
     * [Function type 1](#small_orange_diamond-function-type-1)
     * [Function type 2](#small_orange_diamond-function-type-2)
@@ -185,6 +187,84 @@ To make this be more useful, the syntax should be extended to have common prepro
 #### :small_orange_diamond: Foreach
 
 Most likely will work like other languages.
+
+### General Statements
+
+#### :small_orange_diamond: Do
+
+The do statement just runs code in it's block. It also provides an else statement which is always executed:
+
+```csharp
+do {
+    //Some Code.
+}
+else {
+    //Some more code.
+}
+```
+
+It makes it possible to write the following logic:
+
+```csharp
+if (condition) {
+
+} else do {
+    //Some code.
+} else if (condition) {
+
+}
+
+```
+
+It is equivalent to the following:
+
+```csharp
+if (condition) {
+
+} else {
+    //Some code.
+    if (condition) {
+    
+    }
+}
+```
+
+Or this:
+
+```csharp
+if (condition1) {
+
+} else if (condition2) {
+
+} else do {
+
+} else while (condition3) {
+
+} else {
+
+}
+```
+
+Is equivalent to this:
+
+```csharp
+if (condition1) {
+
+} else {
+    if (condition2) {
+
+    } else { 
+        //Do goes here
+        if (condition3) {
+            while (condition3) {
+
+            }
+        } else {
+
+        }
+    }
+}
+```
 
 ### Subroutines
 
