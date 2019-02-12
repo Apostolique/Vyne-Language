@@ -23,6 +23,9 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [foreach](#small_orange_diamond-foreach)
   * [General Statements](#general-statements)
     * [do](#small_orange_diamond-do)
+    * [label](#small_orange_diamond-label)
+    * [break](#small_orange_diamond-break)
+    * [continue](#small_orange_diamond-continue)
   * [Subroutines](#subroutines)
     * [Function type 1](#small_orange_diamond-function-type-1)
     * [Function type 2](#small_orange_diamond-function-type-2)
@@ -285,6 +288,69 @@ else {
         } else {
 
         }
+    }
+}
+```
+
+#### :small_orange_diamond: Label
+
+It is possible to add labels to some statements.
+
+```csharp
+while outer: condition {
+    while inner: condition {
+    
+    }
+}
+```
+
+#### :small_orange_diamond: Break
+
+A break is used to exit out of a loop.
+
+```csharp
+loop {
+    break;
+}
+//We end up here after the break.
+```
+
+In nested loops, it is possible specify which loop to break out of using labels.
+
+```csharp
+while outer: condition {
+    while middle: condition {
+        while inner: condition {
+            break middle;
+        }
+    }
+    //We end up here after the break.
+}
+```
+
+#### :small_orange_diamond: Continue
+
+A continue is used to skip to the end of a loop iteration.
+
+```csharp
+while: condition {
+    continue;
+    
+    //Some code that is never reached.
+    
+    //We end up here after the continue.
+}
+```
+
+The continue can also be used with labels.
+
+```csharp
+while outer: condition {
+    while middle: condition {
+        while inner: condition {
+            continue middle;
+        }
+        //We end up here after the continue.
     }
 }
 ```
