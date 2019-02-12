@@ -78,7 +78,17 @@ There is also a way to break out of nested comments:
 
 #### :small_orange_diamond: If
 
-Works like other languages.
+```
+if: condition {
+
+}
+else if: condition {
+
+}
+else {
+
+}
+```
 
 #### :small_orange_diamond: Switch
 
@@ -91,10 +101,10 @@ Works like other languages. Will be closer to functional languages with pattern 
 The while loop has extra features compared to other languages.
 
 ```csharp
-while (condition) {
+while: condition {
 
 }
-else while (condition) {
+else while: condition {
 
 }
 else loop {
@@ -113,13 +123,13 @@ If the second condition was also false, it will execute the final else loop. The
 This new while loop is now a special case of the if statement. It makes it possible to have this syntax:
 
 ```csharp
-if (condition) {
+if: condition {
 
 }
-else while (condition) {
+else while: condition {
 
 }
-else if (condition) {
+else if: condition {
 
 }
 else {
@@ -149,7 +159,7 @@ Can be done using loop.
 loop {
     //Some code here.
     
-    if (condition) {
+    if: condition {
         break;
     }
 }
@@ -160,10 +170,10 @@ loop {
 Now this is a really fancy loop. This will loop until all conditions are false.
 
 ```csharp
-coil (condition) {
+coil: condition {
 
 }
-else coil (condition) {
+else coil: condition {
 
 }
 ```
@@ -172,10 +182,10 @@ The coil loop is equivalent to this:
 
 ```csharp
 loop {
-    while (condition) {
+    while: condition {
         //Do something
     }
-    else while (condition) {
+    else while: condition {
         //Do something
     }
     else {
@@ -210,11 +220,13 @@ else {
 It makes it possible to write the following logic:
 
 ```csharp
-if (condition) {
+if: condition {
 
-} else do {
+}
+else do {
     //Some code.
-} else if (condition) {
+}
+else if: condition {
 
 }
 
@@ -223,11 +235,12 @@ if (condition) {
 It is equivalent to the following:
 
 ```csharp
-if (condition) {
+if: condition {
 
-} else {
+}
+else {
     //Some code.
-    if (condition) {
+    if: condition {
     
     }
 }
@@ -236,15 +249,19 @@ if (condition) {
 Or this:
 
 ```csharp
-if (condition1) {
+if: condition1 {
 
-} else if (condition2) {
+}
+else if: condition2 {
 
-} else do {
+}
+else do {
 
-} else while (condition3) {
+}
+else while: condition3 {
 
-} else {
+}
+else {
 
 }
 ```
@@ -252,15 +269,17 @@ if (condition1) {
 Is equivalent to this:
 
 ```csharp
-if (condition1) {
+if: condition1 {
 
-} else {
-    if (condition2) {
+}
+else {
+    if: condition2 {
 
-    } else { 
+    }
+    else { 
         //Do goes here
-        if (condition3) {
-            while (condition3) {
+        if: condition3 {
+            while: condition3 {
 
             }
         } else {
