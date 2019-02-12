@@ -82,10 +82,10 @@ There is also a way to break out of nested comments:
 #### :small_orange_diamond: If
 
 ```csharp
-if: condition {
+if condition {
 
 }
-else if: condition {
+else if condition {
 
 }
 else {
@@ -104,10 +104,10 @@ Works like other languages. Will be closer to functional languages with pattern 
 The while loop has extra features compared to other languages.
 
 ```csharp
-while: condition {
+while condition {
 
 }
-else while: condition {
+else while condition {
 
 }
 else loop {
@@ -126,13 +126,13 @@ If the second condition was also false, it will execute the final else loop. The
 This new while loop is now a special case of the if statement. It makes it possible to have this syntax:
 
 ```csharp
-if: condition {
+if condition {
 
 }
-else while: condition {
+else while condition {
 
 }
-else if: condition {
+else if condition {
 
 }
 else {
@@ -162,7 +162,7 @@ Can be done using loop.
 loop {
     //Some code here.
     
-    if: condition {
+    if condition {
         break;
     }
 }
@@ -173,10 +173,10 @@ loop {
 Now this is a really fancy loop. This will loop until all conditions are false.
 
 ```csharp
-coil: condition {
+coil condition {
 
 }
-else coil: condition {
+else coil condition {
 
 }
 ```
@@ -185,10 +185,10 @@ The coil loop is equivalent to this:
 
 ```csharp
 loop {
-    while: condition {
+    while condition {
         //Do something
     }
-    else while: condition {
+    else while condition {
         //Do something
     }
     else {
@@ -223,13 +223,13 @@ else {
 It makes it possible to write the following logic:
 
 ```csharp
-if: condition {
+if condition {
 
 }
 else do {
     //Some code.
 }
-else if: condition {
+else if condition {
 
 }
 
@@ -238,12 +238,12 @@ else if: condition {
 It is equivalent to the following:
 
 ```csharp
-if: condition {
+if condition {
 
 }
 else {
     //Some code.
-    if: condition {
+    if condition {
     
     }
 }
@@ -252,16 +252,16 @@ else {
 Or this:
 
 ```csharp
-if: condition1 {
+if condition1 {
 
 }
-else if: condition2 {
+else if condition2 {
 
 }
 else do {
 
 }
-else while: condition3 {
+else while condition3 {
 
 }
 else {
@@ -272,17 +272,17 @@ else {
 Is equivalent to this:
 
 ```csharp
-if: condition1 {
+if condition1 {
 
 }
 else {
-    if: condition2 {
+    if condition2 {
 
     }
     else { 
         //Do goes here
-        if: condition3 {
-            while: condition3 {
+        if condition3 {
+            while condition3 {
 
             }
         } else {
@@ -297,8 +297,8 @@ else {
 It is possible to add labels to some statements.
 
 ```csharp
-while outer: condition {
-    while inner: condition {
+while :outer condition {
+    while :inner condition {
     
     }
 }
@@ -318,9 +318,9 @@ loop {
 In nested loops, it is possible specify which loop to break out of using labels.
 
 ```csharp
-while outer: condition {
-    while middle: condition {
-        while inner: condition {
+while :outer condition {
+    while :middle condition {
+        while :inner condition {
             break middle;
         }
     }
@@ -333,7 +333,7 @@ while outer: condition {
 A continue is used to skip to the end of a loop iteration.
 
 ```csharp
-while: condition {
+while condition {
     continue;
     
     //Some code that is never reached.
@@ -345,9 +345,9 @@ while: condition {
 The continue can also be used with labels.
 
 ```csharp
-while outer: condition {
-    while middle: condition {
-        while inner: condition {
+while :outer condition {
+    while :middle condition {
+        while :inner condition {
             continue middle;
         }
         //We end up here after the continue.
