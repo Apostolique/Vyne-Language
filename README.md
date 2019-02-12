@@ -209,7 +209,7 @@ Most likely will work like other languages.
 
 #### :small_orange_diamond: Do
 
-The do statement just runs code in it's block. It also provides an else statement which is always executed:
+The do statement just runs code. It also provides an else statement which is always executed if the do was executed:
 
 ```csharp
 do {
