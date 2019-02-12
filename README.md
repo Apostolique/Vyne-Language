@@ -365,9 +365,9 @@ Currently proposed boolean operators:
 
 ```
 ==
+!=
 <
 >
-!=
 <=
 >=
 !<
