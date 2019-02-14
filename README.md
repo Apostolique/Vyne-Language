@@ -19,7 +19,6 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [for](#small_orange_diamond-for)
     * [loop](#small_orange_diamond-loop)
     * [do while](#small_orange_diamond-do-while)
-    * [coil](#small_orange_diamond-coil)
     * [foreach](#small_orange_diamond-foreach)
   * [General Statements](#general-statements)
     * [do](#small_orange_diamond-do)
@@ -167,39 +166,6 @@ loop {
     }
 }
 ```
-
-#### :small_orange_diamond: Coil
-
-Now this is a really fancy loop. This will loop until all conditions are false.
-
-```csharp
-coil condition {
-
-}
-else coil condition {
-
-}
-```
-
-The coil loop is equivalent to this:
-
-```csharp
-loop {
-    while condition {
-        //Do something
-    }
-    else while condition {
-        //Do something
-    }
-    else {
-        break;
-    }
-}
-```
-
-To make this be more useful, the syntax should be extended to have common preprocess and postprocess code blocks. This would make it possible to extract common code between the different branches.
-
-**Note**: This loop will likely not make it into the Vyne language, but it is still interesting to think about.
 
 #### :small_orange_diamond: Foreach
 
