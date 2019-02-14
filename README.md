@@ -281,7 +281,7 @@ loop {
 //We end up here after the break.
 ```
 
-In nested loops, it is possible specify which loop to break out of using labels.
+In nested loops, it is possible to specify which loop to break out of using labels.
 
 ```csharp
 while :outer condition {
