@@ -383,7 +383,7 @@ A type 2 function can only call other type 2 functions to preserve the no side e
 
 #### :small_orange_diamond: Function type 3
 
-Type 3 returns as a branching path. Each path can have it's own return signature. If the caller doesn't have a matching return branch, control percolates back through subroutine calls and/or nested blocks until a matching branch is found or until the end of the main program is reached, at which point the program is forcibly stopped with a suitable error message.
+Type 3 returns as a branching path. Each path can have it's own return signature. If the caller doesn't have a matching return branch, control continues after the function call.
 
 ![](https://i.imgur.com/2vUwXgY.png)
 
