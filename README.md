@@ -76,6 +76,13 @@ There is also a way to break out of nested comments:
 *//
 ```
 
+Loose multiline comment terminators are ignored as whitespace:
+
+```
+*/*/*/
+```
+
+
 ### Choices
 
 #### :small_orange_diamond: If
