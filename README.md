@@ -431,3 +431,7 @@ becomes
 ### Scope
 
 The concept of a scope is very important in the Vyne language. Where does something exist? Where something lives needs to always be explicit. A global variable would only be a variable that is made explicitly accessible within other scopes. It is possible to name scopes and pass them as function parameters.
+
+#### Scope dependency
+
+It is possible to define a scope as dependent on external factors. This makes it possible for a scope to access variables that are external to itself. It's up to the parent scope to satisfy those dependencies.
