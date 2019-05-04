@@ -129,7 +129,7 @@ If the first condition was false, it will check the second condition. If it is t
 
 If the second condition was also false, it will execute the final else loop. The else loop here is an infinite loop that requires manual breaking out.
 
-This new while loop is now a special case of the if statement. It makes it possible to have this syntax:
+This new while loop can be mixed with other statements such as the if statement. It makes it possible to have this syntax:
 
 ```csharp
 if condition {
