@@ -396,7 +396,7 @@ Type 3 returns as a branching path. Each path can have it's own return signature
 
 #### :small_orange_diamond: Function type 4
 
-Type 4 is similar to a goto. Takes input parameters. Control flow is never returned.
+Type 4 is similar to a goto. Takes input parameters. Control flow is never returned. There are limits on where type 4 can be used.
 
 ### Boolean operators
 
