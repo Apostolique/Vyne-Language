@@ -182,13 +182,13 @@ Most likely will work like other languages.
 
 #### :small_orange_diamond: Do
 
-The do statement just runs code. It also provides an else statement which is always executed if the do was executed:
+The do statement just runs code. It can be used with the `then` keyword which is always executed if the do was executed:
 
 ```csharp
 do {
     //Some Code.
 }
-else {
+then {
     //Some more code.
 }
 ```
@@ -202,7 +202,7 @@ if condition {
 else do {
     //Some code.
 }
-else if condition {
+then if condition {
 
 }
 
@@ -234,7 +234,7 @@ else if condition2 {
 else do {
 
 }
-else while condition3 {
+then while condition3 {
 
 }
 else {
