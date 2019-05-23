@@ -87,7 +87,7 @@ Loose multiline comment terminators are ignored as whitespace:
 
 ### Block
 
-A code block is define by an opening and closing curly brackets. The block starts a local scope and memory for that scope is cleaned up when reaching the closing curly bracket.
+A code block is defined by an opening and closing curly bracket. The block starts a local scope and memory for that scope is cleaned up when reaching the closing curly bracket.
 
 ```
 {
