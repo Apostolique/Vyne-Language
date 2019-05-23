@@ -222,7 +222,7 @@ Most likely will work like other languages.
 
 #### :small_orange_diamond: Do
 
-The `do` statement just runs code. It can be used with the `then` keyword which is always executed if the do was executed:
+The `do` statement simply runs code. It can always be ommited, but can be used for code style. It can be used with the `then` keyword which is always executed if the do was executed:
 
 ```csharp
 do {
@@ -230,79 +230,6 @@ do {
 }
 then {
     //Some more code.
-}
-```
-
-It makes it possible to write the following logic:
-
-```csharp
-if condition {
-
-}
-else do {
-    //Some code.
-}
-then if condition {
-
-}
-
-```
-
-It is equivalent to the following:
-
-```csharp
-if condition {
-
-}
-else {
-    //Some code.
-    if condition {
-    
-    }
-}
-```
-
-Or this:
-
-```csharp
-if condition1 {
-
-}
-else if condition2 {
-
-}
-else do {
-
-}
-then while condition3 {
-
-}
-else {
-
-}
-```
-
-Is equivalent to this:
-
-```csharp
-if condition1 {
-
-}
-else {
-    if condition2 {
-
-    }
-    else { 
-        //Do goes here
-        if condition3 {
-            while condition3 {
-
-            }
-        }
-        else {
-
-        }
-    }
 }
 ```
 
