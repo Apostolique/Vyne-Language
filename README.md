@@ -82,6 +82,43 @@ Loose multiline comment terminators are ignored as whitespace:
 */*/*/
 ```
 
+### Blocks
+
+A code block is define by an opening and closing curly brackets. The block starts a local scope and memory for that scope is cleaned up when reaching the closing curly bracket.
+
+```
+{
+
+}
+```
+
+Blocks can be chained using the `else` and `then` keywords.
+
+#### :small_orange_diamond: Else
+
+The else keyword is used to execute a block when the first block was not executed.
+
+```
+{
+    //This gets executed.
+}
+else {
+    //This never gets executed.
+}
+```
+
+#### :small_orange_diamond: Then
+
+The then keyword is used to always execute a block when the first block was executed.
+
+```
+{
+    //This gets executed.
+}
+then {
+    //This gets executed.
+}
+```
 
 ### Choices
 
