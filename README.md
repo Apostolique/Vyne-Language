@@ -99,7 +99,7 @@ Blocks can be chained using the `else` and `then` keywords.
 
 #### :small_orange_diamond: Else
 
-The else keyword is used to execute a block when the first block was not executed.
+The `else` keyword is used to execute a block when the first block was not executed.
 
 ```
 {
@@ -112,7 +112,7 @@ else {
 
 #### :small_orange_diamond: Then
 
-The then keyword is used to always execute a block when the first block was executed.
+The `then` keyword is used to always execute a block when the first block was executed.
 
 ```
 {
@@ -147,7 +147,7 @@ Works like other languages. Will be closer to functional languages with pattern 
 
 #### :small_orange_diamond: While
 
-The while loop has extra features compared to other languages.
+The `while` loop has extra features compared to other languages.
 
 ```csharp
 while condition {
@@ -161,7 +161,7 @@ else loop {
 }
 ```
 
-The Vyne while loop works like an if statement.
+The Vyne while loop works like an `if` statement.
 
 It starts by checking the first condition. If it is true, it will enter that branch until the condition becomes false.
 
@@ -169,7 +169,7 @@ If the first condition was false, it will check the second condition. If it is t
 
 If the second condition was also false, it will execute the final else loop. The else loop here is an infinite loop that requires manual breaking out.
 
-This new while loop can be mixed with other statements such as the if statement. It makes it possible to have this syntax:
+This new `while` loop can be mixed with other statements such as the `if` statement. It makes it possible to have this syntax:
 
 ```csharp
 if condition {
@@ -202,7 +202,7 @@ loop {
 
 #### :small_orange_diamond: Do While
 
-Can be done using loop.
+Can be done using `loop`.
 
 ```csharp
 loop {
@@ -222,7 +222,7 @@ Most likely will work like other languages.
 
 #### :small_orange_diamond: Do
 
-The do statement just runs code. It can be used with the `then` keyword which is always executed if the do was executed:
+The `do` statement just runs code. It can be used with the `then` keyword which is always executed if the do was executed:
 
 ```csharp
 do {
