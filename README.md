@@ -11,7 +11,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 * [Notes](#notes)
 * [Features](#features)
   * [Comments](#comments)
-  * [Blocks](#blocks)
+  * [Block](#block)
    * [Else](#small_orange_diamond-else)
    * [Then](#small_orange_diamond-then)
   * [Choices](#choices)
@@ -85,7 +85,7 @@ Loose multiline comment terminators are ignored as whitespace:
 */*/*/
 ```
 
-### Blocks
+### Block
 
 A code block is define by an opening and closing curly brackets. The block starts a local scope and memory for that scope is cleaned up when reaching the closing curly bracket.
 
