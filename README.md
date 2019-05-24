@@ -11,9 +11,13 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 * [Notes](#notes)
 * [Features](#features)
   * [Comments](#comments)
-  * [Block](#block)
-    * [Else](#small_orange_diamond-else)
-    * [Then](#small_orange_diamond-then)
+  * [Blocks](#blocks)
+    * [cleaned](#small_orange_diamond-cleaned)
+    * [defered](#small_orange_diamond-defered)
+    * [invisible](#small_orange_diamond-invisible)
+  * [Block Chaining](#block-chaining)
+    * [else](#small_orange_diamond-else)
+    * [then](#small_orange_diamond-then)
   * [Choices](#choices)
     * [if](#small_orange_diamond-if)
     * [switch](#small_orange_diamond-switch)
@@ -85,15 +89,41 @@ Loose multiline comment terminators are ignored as whitespace:
 */*/*/
 ```
 
-### Block
+### Blocks
 
-A code block is defined by a pair of opening and closing braces. The block starts a local scope and memory for that scope is cleaned up when the closing brace is reached.
+There are 3 different types of code blocks.
+
+#### :small_orange_diamond: Cleaned
+
+Starts a local scope. The scope is cleaned up when the end of the scope is reached.
 
 ```
 {
 
 }
 ```
+
+#### :small_orange_diamond: Defered
+
+Starts a local scope. The scope is cleaned up when the parent scope is cleaned up.
+
+```
+<
+
+>
+```
+
+#### :small_orange_diamond: Invisible
+
+Doesn't start a new scope. Memory is cleaned up when the current scope is cleaned up.
+
+```
+[
+
+]
+```
+
+### Block Chaining
 
 Blocks can be chained using the `else` and `then` keywords.
 
