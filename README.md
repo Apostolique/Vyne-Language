@@ -3,7 +3,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 
 ## Discord
 
-[![Discord](https://img.shields.io/discord/544576977009377290.svg)](https://discord.gg/hd5dRH4)
+[![Discord](https://img.shields.io/discord/530598289813536771.svg)](https://discord.gg/dHkA4bP)
 
 ## Index
 * [Goals](#goals)
