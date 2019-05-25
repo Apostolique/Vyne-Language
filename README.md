@@ -123,6 +123,28 @@ Doesn't start a new scope. Memory is cleaned up when the current scope is cleane
 }.
 ```
 
+Can be used like this:
+
+```rust
+{
+   let c = a + b;
+
+   .{
+      let a = 0;
+   }.
+   .{
+      let b = 10;
+   }.
+
+   {
+      let e = a + d;
+
+      .{
+         let d = 20 + c;
+      }.
+   }
+}```
+
 ### Block Chaining
 
 Blocks can be chained using the `else` and `then` keywords.
