@@ -108,9 +108,9 @@ Starts a local scope. The scope is cleaned up when the end of the scope is reach
 Starts a local scope. The scope is cleaned up when the parent scope is cleaned up.
 
 ```
-<
+<{
 
->
+}>
 ```
 
 #### :small_orange_diamond: Invisible
@@ -118,9 +118,9 @@ Starts a local scope. The scope is cleaned up when the parent scope is cleaned u
 Doesn't start a new scope. Memory is cleaned up when the current scope is cleaned up.
 
 ```
-[
+.{
 
-]
+}.
 ```
 
 ### Block Chaining
