@@ -14,7 +14,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
   * [Blocks](#blocks)
     * [cleaned](#small_orange_diamond-cleaned)
     * [defered](#small_orange_diamond-deferred)
-    * [invisible](#small_orange_diamond-invisible)
+    * [paralleled](#small_orange_diamond-paralleled)
   * [Block Chaining](#block-chaining)
     * [else](#small_orange_diamond-else)
     * [then](#small_orange_diamond-then)
@@ -113,9 +113,9 @@ Starts a local scope. The scope is cleaned up when the parent scope is cleaned u
 }>
 ```
 
-#### :small_orange_diamond: Invisible
+#### :small_orange_diamond: Paralleled
 
-Doesn't start a new scope. Memory is cleaned up when the current scope is cleaned up.
+Doesn't start a new scope. Memory is cleaned up when the current scope is cleaned up. This block is brought to the top of the current scope to be executed first either sequencially or in parallel with the other parallel blocks in the scope.
 
 ```
 .{
