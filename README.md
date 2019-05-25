@@ -12,7 +12,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 * [Features](#features)
   * [Comments](#comments)
   * [Blocks](#blocks)
-    * [cleaned](#small_orange_diamond-cleaned)
+    * [basic](#small_orange_diamond-basic)
     * [defered](#small_orange_diamond-deferred)
     * [paralleled](#small_orange_diamond-paralleled)
   * [Block Chaining](#block-chaining)
@@ -93,7 +93,7 @@ Loose multiline comment terminators are ignored as whitespace:
 
 There are 3 different types of code blocks.
 
-#### :small_orange_diamond: Cleaned
+#### :small_orange_diamond: Basic
 
 Starts a local scope. The scope is cleaned up when the end of the scope is reached.
 
