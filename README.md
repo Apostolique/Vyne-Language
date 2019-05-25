@@ -143,7 +143,8 @@ Can be used like this:
          let d = 20 + c;
       }.
    }
-}```
+}
+```
 
 ### Block Chaining
 
