@@ -13,7 +13,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
   * [Comments](#comments)
   * [Blocks](#blocks)
     * [cleaned](#small_orange_diamond-cleaned)
-    * [defered](#small_orange_diamond-defered)
+    * [defered](#small_orange_diamond-deferred)
     * [invisible](#small_orange_diamond-invisible)
   * [Block Chaining](#block-chaining)
     * [else](#small_orange_diamond-else)
@@ -103,7 +103,7 @@ Starts a local scope. The scope is cleaned up when the end of the scope is reach
 }
 ```
 
-#### :small_orange_diamond: Defered
+#### :small_orange_diamond: Deferred
 
 Starts a local scope. The scope is cleaned up when the parent scope is cleaned up.
 
