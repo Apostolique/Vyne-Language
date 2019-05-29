@@ -125,7 +125,7 @@ Doesn't start a new scope. Memory is cleaned up when the current scope is cleane
 
 Can be used like this:
 
-```rust
+```lisp
 {
    let c = a + b;
 
