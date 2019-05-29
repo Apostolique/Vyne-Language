@@ -108,9 +108,9 @@ Starts a local scope. The scope is cleaned up when the end of the scope is reach
 Starts a local scope. The scope is cleaned up when the parent scope is cleaned up.
 
 ```
-<{
+{+>
 
-}>
+}
 ```
 
 #### :small_orange_diamond: Paralleled
@@ -118,9 +118,9 @@ Starts a local scope. The scope is cleaned up when the parent scope is cleaned u
 Doesn't start a new scope. Memory is cleaned up when the current scope is cleaned up. This block is brought to the top of the current scope to be executed first either sequencially or in parallel with the other parallel blocks in the scope.
 
 ```
-.{
+{|>
 
-}.
+}
 ```
 
 Can be used like this:
@@ -129,19 +129,19 @@ Can be used like this:
 {
    let c = a + b;
 
-   .{
+   {|>
       let a = 0;
-   }.
-   .{
+   }
+   {|>
       let b = 10;
-   }.
+   }
 
    {
       let e = a + d;
 
-      .{
+      {|>
          let d = 20 + c;
-      }.
+      }
    }
 }
 ```
