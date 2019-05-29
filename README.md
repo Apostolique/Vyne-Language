@@ -13,7 +13,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
   * [Comments](#comments)
   * [Blocks](#blocks)
     * [Basic](#small_orange_diamond-basic)
-    * [Defered](#small_orange_diamond-deferred)
+    * [Deferred](#small_orange_diamond-deferred)
     * [Paralleled](#small_orange_diamond-paralleled)
   * [Block Chaining](#block-chaining)
     * [Else](#small_orange_diamond-else)
