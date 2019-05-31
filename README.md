@@ -35,8 +35,6 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
   * [Subroutines](#subroutines)
     * [Function type 1](#small_orange_diamond-function-type-1)
     * [Function type 2](#small_orange_diamond-function-type-2)
-    * [Function type 3](#small_orange_diamond-function-type-3)
-    * [Function type 4](#small_orange_diamond-function-type-4)
   * [Boolean operators](#boolean-operators)
   * [Scope](#scope)
 
@@ -408,16 +406,6 @@ function(a, b) {
 This last one could be used to swap variables.
 
 A type 2 function can only call other type 2 functions to preserve the no side effect property.
-
-#### :small_orange_diamond: Function type 3
-
-Type 3 returns as a branching path. Each path can have it's own return signature. If the caller doesn't have a matching return branch, control continues after the function call.
-
-![](https://i.imgur.com/2vUwXgY.png)
-
-#### :small_orange_diamond: Function type 4
-
-Type 4 is similar to a goto. Takes input parameters. Control flow is never returned. There are limits on where type 4 can be used.
 
 ### Boolean operators
 
