@@ -28,6 +28,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [Do while](#small_orange_diamond-do-while)
     * [Foreach](#small_orange_diamond-foreach)
   * [General Statements](#general-statements)
+    * [Delay expression](#small_orange_diamond-delay-expression)
     * [Label](#small_orange_diamond-label)
     * [Break](#small_orange_diamond-break)
     * [Continue](#small_orange_diamond-continue)
@@ -269,6 +270,33 @@ loop {
 Most likely will work like other languages.
 
 ### General Statements
+
+#### :small_orange_diamond: Delay Expression
+
+The delay expression is used to delay the execution of a block. It can be used to create code comments:
+
+```csharp
+...{
+    // Some code.
+    // It will never be executed.
+}
+```
+
+It is also possible to catch the definition in a variable to execute it later:
+
+```csharp
+let Point = ...{+>
+    let X = 10;
+    let Y = 20;
+};
+
+let a = Point!;
+let b = Point!;
+
+a.X = 15;
+```
+
+This can be used to define reusable code.
 
 #### :small_orange_diamond: Label
 
