@@ -380,15 +380,15 @@ Type 2 doesn't have the ability to produce side effects. Takes read-only input p
 For example, the following function takes 2 input variables and returns 3 output variables:
 
 ```csharp
-var a;
-var b;
+let a = 1;
+let b = 2;
 
 var c, d, e = function(a, b);
 
-function(f, g) {
+let function = (f, g) {
     f += 1;
     g += 1;
-    var h;
+    let h = 3;
     return f, g, h;
 }
 ```
@@ -398,28 +398,28 @@ The original variables `a` and `b` are not modified. They are passed by value.
 The variables `c`, `d`, `e` are write-only from the function's point of view.
 
 ```csharp
-var a;
-var b;
+let a = 1;
+let b = 2;
 
 a, b = function(a, b);
 
-function(a, b) {
-    a += 1;
-    b += 1;
-    return a, b;
+let function = (c, d) {
+    c += 1;
+    d += 1;
+    return c, d;
 }
 ```
 
 In the example above, the caller gives explicit permission to the function to modify `a` and `b`. As such they are passed by reference.
 
 ```csharp
-var a;
-var b;
+let a = 1;
+let b = 2;
 
 a, b = function(a, b);
 
-function(a, b) {
-    return b, a;
+function(c, d) {
+    return d, c;
 }
 ```
 
