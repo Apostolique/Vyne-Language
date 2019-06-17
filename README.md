@@ -59,6 +59,12 @@ The syntax shown in this document is tentative. Only used as a proof of concept.
 
 Support for single line comments and nested multiline comments.
 
+The current syntax for single line comments:
+
+```csharp
+// Hello World!
+```
+
 The current syntax for multiline comments:
 
 ```
@@ -154,10 +160,10 @@ The `else` keyword is used to execute a block when the first block was not execu
 
 ```
 {
-    //This gets executed.
+    // This gets executed.
 }
 else {
-    //This never gets executed.
+    // This never gets executed.
 }
 ```
 
@@ -167,10 +173,10 @@ The `then` keyword is used to always execute a block when the first block was ex
 
 ```
 {
-    //This gets executed.
+    // This gets executed.
 }
 then {
-    //This gets executed.
+    // This gets executed.
 }
 ```
 
@@ -257,7 +263,7 @@ Can be done using `loop`.
 
 ```csharp
 loop {
-    //Some code here.
+    // Some code here.
     
     if condition {
         break;
@@ -318,7 +324,7 @@ A break is used to exit out of a loop.
 loop {
     break;
 }
-//We end up here after the break.
+// We end up here after the break.
 ```
 
 In nested loops, it is possible to specify which loop to break out of using labels.
@@ -330,7 +336,7 @@ while :outer condition {
             break middle;
         }
     }
-    //We end up here after the break.
+    // We end up here after the break.
 }
 ```
 
@@ -342,9 +348,9 @@ A continue is used to skip to the end of a loop iteration.
 while condition {
     continue;
     
-    //Some code that is never reached.
+    // Some code that is never reached.
     
-    //We end up here after the continue.
+    // We end up here after the continue.
 }
 ```
 
@@ -356,7 +362,7 @@ while :outer condition {
         while :inner condition {
             continue middle;
         }
-        //We end up here after the continue.
+        // We end up here after the continue.
     }
 }
 ```
