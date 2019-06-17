@@ -28,7 +28,6 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [Do while](#small_orange_diamond-do-while)
     * [Foreach](#small_orange_diamond-foreach)
   * [General Statements](#general-statements)
-    * [Do](#small_orange_diamond-do)
     * [Label](#small_orange_diamond-label)
     * [Break](#small_orange_diamond-break)
     * [Continue](#small_orange_diamond-continue)
@@ -270,19 +269,6 @@ loop {
 Most likely will work like other languages.
 
 ### General Statements
-
-#### :small_orange_diamond: Do
-
-The `do` statement simply runs code. It can always be ommited, but can be used for code style. It can be used with the `then` keyword which is always executed if the do was executed:
-
-```csharp
-do {
-    //Some Code.
-}
-then {
-    //Some more code.
-}
-```
 
 #### :small_orange_diamond: Label
 
