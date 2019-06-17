@@ -383,7 +383,7 @@ For example, the following function takes 2 input variables and returns 3 output
 let a = 1;
 let b = 2;
 
-var c, d, e = function(a, b);
+let c, d, e = function(a, b);
 
 let function = (f, g) {
     f += 1;
