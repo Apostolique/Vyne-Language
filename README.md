@@ -282,7 +282,7 @@ Most likely will work like other languages.
 The delay expression is used to delay the execution of a block. It can be used to create code comments:
 
 ```csharp
-...{
+~{
     // Some code.
     // It will never be executed.
 }
@@ -291,7 +291,7 @@ The delay expression is used to delay the execution of a block. It can be used t
 It is also possible to catch the definition in a variable to execute it later:
 
 ```csharp
-let Point = ...{+>
+let Point = ~{+>
     let X = 10;
     let Y = 20;
 };
