@@ -11,6 +11,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 * [Notes](#notes)
 * [Features](#features)
   * [Comments](#comments)
+  * [Casting](#casting)
   * [Blocks](#blocks)
     * [Basic](#small_orange_diamond-basic)
     * [Deferred](#small_orange_diamond-deferred)
@@ -91,6 +92,16 @@ Loose multiline comment terminators are ignored as whitespace:
 
 ```
 */*/*/
+```
+
+### Casting
+
+Casting is done after the value. Given two types `A` and `B` where `B` exposes a function called `Foo`.
+
+```csharp
+A a;
+
+a:B.Foo();
 ```
 
 ### Blocks
