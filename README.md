@@ -42,7 +42,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 ## Goals
 
 * The Vyne language is a general purpose programming language.
-* It should be cross-platform, or platform agnostic.
+* It should be cross-platform.
 * Compile parameters should be included within the source code.
 
 ## Far Fetched Goals
