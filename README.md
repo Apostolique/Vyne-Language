@@ -68,7 +68,7 @@ The current syntax for single line comments:
 
 The current syntax for multiline comments:
 
-```
+```rust
 /*
     This is inside the comment
     /*
@@ -80,7 +80,7 @@ The current syntax for multiline comments:
 
 There is also a way to break out of nested comments:
 
-```
+```rust
 /*
     /*
         /*
