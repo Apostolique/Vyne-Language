@@ -23,9 +23,9 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [If](#small_orange_diamond-if)
     * [Switch](#small_orange_diamond-switch)
   * [Loops](#loops)
+    * [Loop](#small_orange_diamond-loop)
     * [While](#small_orange_diamond-while)
     * [For](#small_orange_diamond-for)
-    * [Loop](#small_orange_diamond-loop)
     * [Do while](#small_orange_diamond-do-while)
     * [Foreach](#small_orange_diamond-foreach)
   * [General Statements](#general-statements)
@@ -213,6 +213,16 @@ Works like other languages. Will be closer to functional languages with pattern 
 
 ### Loops
 
+#### :small_orange_diamond: Loop
+
+An infinite loop that requires manual breaking out.
+
+```csharp
+loop {
+
+}
+```
+
 #### :small_orange_diamond: While
 
 The `while` loop has extra features compared to other languages.
@@ -257,16 +267,6 @@ else {
 #### :small_orange_diamond: For
 
 Works like other languages.
-
-#### :small_orange_diamond: Loop
-
-An infinite loop that requires manual breaking out.
-
-```csharp
-loop {
-
-}
-```
 
 #### :small_orange_diamond: Do While
 
