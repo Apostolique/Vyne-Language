@@ -122,7 +122,7 @@ Starts a local scope. The scope is cleaned up when the end of the scope is reach
 
 Starts a local scope. The scope is cleaned up when the parent scope is cleaned up.
 
-```
+```rust
 {+>
 
 }
@@ -132,7 +132,7 @@ Starts a local scope. The scope is cleaned up when the parent scope is cleaned u
 
 Doesn't start a new scope. Memory is cleaned up when the current scope is cleaned up. This block is brought to the top of the current scope to be executed first either sequencially or in parallel with the other parallel blocks in the scope.
 
-```
+```rust
 {|>
 
 }
@@ -140,7 +140,7 @@ Doesn't start a new scope. Memory is cleaned up when the current scope is cleane
 
 Can be used like this:
 
-```lisp
+```rust
 {
    let c = a + b;
 
@@ -169,7 +169,7 @@ Blocks can be chained using the `else` and `then` keywords.
 
 The `else` keyword is used to execute a block when the first block was not executed.
 
-```
+```rust
 {
     // This gets executed.
 }
@@ -182,7 +182,7 @@ else {
 
 The `then` keyword is used to always execute a block when the first block was executed.
 
-```
+```vb
 {
     // This gets executed.
 }
@@ -195,7 +195,7 @@ then {
 
 #### :small_orange_diamond: If
 
-```csharp
+```rust
 if condition {
 
 }
@@ -217,7 +217,7 @@ Works like other languages. Will be closer to functional languages with pattern 
 
 An infinite loop that requires manual breaking out.
 
-```csharp
+```rust
 loop {
 
 }
@@ -227,7 +227,7 @@ loop {
 
 The `while` loop has extra features compared to other languages.
 
-```csharp
+```rust
 while condition {
 
 }
@@ -249,7 +249,7 @@ If the second condition was also false, it will execute the final else loop. The
 
 This new `while` loop can be mixed with other statements such as the `if` statement. It makes it possible to have this syntax:
 
-```csharp
+```rust
 if condition {
 
 }
@@ -272,7 +272,7 @@ Works like other languages.
 
 Can be done using `loop`.
 
-```csharp
+```rust
 loop {
     // Some code here.
     
@@ -292,7 +292,7 @@ Most likely will work like other languages.
 
 The delay expression is used to delay the execution of a block. It can be used to create code comments:
 
-```csharp
+```rust
 ~{
     // Some code.
     // It will never be executed.
@@ -301,7 +301,7 @@ The delay expression is used to delay the execution of a block. It can be used t
 
 It is also possible to catch the definition in a variable to execute it later:
 
-```csharp
+```rust
 let Point = ~{+>
     let X = 10;
     let Y = 20;
@@ -319,7 +319,7 @@ This can be used to define reusable code.
 
 It is possible to add labels to some statements.
 
-```csharp
+```rust
 while :outer condition {
     while :inner condition {
     
@@ -331,7 +331,7 @@ while :outer condition {
 
 A break is used to exit out of a loop.
 
-```csharp
+```rust
 loop {
     break;
 }
@@ -340,7 +340,7 @@ loop {
 
 In nested loops, it is possible to specify which loop to break out of using labels.
 
-```csharp
+```rust
 while :outer condition {
     while :middle condition {
         while :inner condition {
@@ -355,7 +355,7 @@ while :outer condition {
 
 A continue is used to skip to the end of a loop iteration.
 
-```csharp
+```rust
 while condition {
     continue;
     
@@ -367,7 +367,7 @@ while condition {
 
 The continue can also be used with labels.
 
-```csharp
+```rust
 while :outer condition {
     while :middle condition {
         while :inner condition {
@@ -390,7 +390,7 @@ Type 2 doesn't have the ability to produce side effects. Takes read-only input p
 
 For example, the following function takes 2 input variables and returns 3 output variables:
 
-```csharp
+```rust
 let a = 1;
 let b = 2;
 
@@ -408,7 +408,7 @@ The original variables `a` and `b` are not modified. They are passed by value.
 
 The variables `c`, `d`, `e` are write-only from the function's point of view.
 
-```csharp
+```rust
 let a = 1;
 let b = 2;
 
@@ -423,7 +423,7 @@ let function = (c, d) {
 
 In the example above, the caller gives explicit permission to the function to modify `a` and `b`. As such they are passed by reference.
 
-```csharp
+```rust
 let a = 1;
 let b = 2;
 
