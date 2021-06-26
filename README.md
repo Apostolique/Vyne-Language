@@ -38,6 +38,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [Function type 2](#small_orange_diamond-function-type-2)
   * [Boolean operators](#boolean-operators)
   * [Scope](#scope)
+  * [Numbers Syntax Sugar](#numbers-syntax-sugar)
 
 ## Goals
 
@@ -275,7 +276,7 @@ Can be done using `loop`.
 ```rust
 loop {
     // Some code here.
-    
+
     if condition {
         break;
     }
@@ -322,7 +323,7 @@ It is possible to add labels to some statements.
 ```rust
 while :outer condition {
     while :inner condition {
-    
+
     }
 }
 ```
@@ -358,9 +359,9 @@ A continue is used to skip to the end of a loop iteration.
 ```rust
 while condition {
     continue;
-    
+
     // Some code that is never reached.
-    
+
     // We end up here after the continue.
 }
 ```
@@ -475,3 +476,7 @@ The concept of a scope is very important in the Vyne language. Where does someth
 #### Scope dependency
 
 It is possible to define a scope as dependent on external factors. This makes it possible for a scope to access variables that are external to itself. It's up to the parent scope to satisfy those dependencies.
+
+### Numbers Syntax Sugar
+
+Ability to write `K` for kilobytes after a number to multiply it by 1024. `512K` would mean `512 * 1024`. `16K` would mean `16384`.
