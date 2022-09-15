@@ -430,7 +430,7 @@ let b = 2;
 
 a, b = function(a, b);
 
-function(c, d) {
+let function = (c, d) {
     return d, c;
 }
 ```
