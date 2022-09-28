@@ -272,7 +272,10 @@ while condition {
 
 }
 then {
-    // The while was executed and is done now.
+    // Loop cleanup.
+}
+else {
+    // The loop never got executed.
 }
 ```
 
