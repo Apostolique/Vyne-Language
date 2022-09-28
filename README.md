@@ -236,7 +236,7 @@ else while condition {
 
 }
 else loop {
-
+   if condition break;
 }
 ```
 
@@ -265,6 +265,17 @@ else {
 }
 ```
 
+Or to clean up after a loop:
+
+```rust
+while condition {
+
+}
+then {
+    // The while was executed and is done now.
+}
+```
+
 #### :small_orange_diamond: For
 
 Works like other languages.
@@ -285,7 +296,7 @@ loop {
 
 #### :small_orange_diamond: Foreach
 
-Most likely will work like other languages.
+Most likely will work other languages.
 
 ### General Statements
 
