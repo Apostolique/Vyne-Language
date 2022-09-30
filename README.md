@@ -437,12 +437,12 @@ In the example above, the caller gives explicit permission to the function to mo
 let a = 1;
 let b = 2;
 
-a, b = swap!(a, b);
-
 let swap = ~{
     .c; .d;
     return d, c;
 }
+
+a, b = swap!(a, b);
 ```
 
 This last one could be used to swap variables.
