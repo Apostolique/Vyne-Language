@@ -413,7 +413,7 @@ let addTwo = ~{
     return b;
 }
 
-let c = addTwo!(a);
+let c = addTwo(a)!;
 ```
 
 The original variable `a` is not modified. It is passed by value.
@@ -428,7 +428,7 @@ let addTwo = ~{
     return b;
 }
 
-a = addTwo!(a);
+a = addTwo(a)!;
 ```
 
 In the example above, the caller gives explicit permission to the function to modify `a`. As such it is passed by reference.
@@ -442,7 +442,7 @@ let swap = ~{
     return d, c;
 }
 
-a, b = swap!(a, b);
+a, b = swap(a, b)!;
 ```
 
 This last one could be used to swap variables.
