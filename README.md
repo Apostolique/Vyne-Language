@@ -403,7 +403,7 @@ Type 1 works similar to functions in other languages. Takes input parameters and
 
 Type 2 doesn't have the ability to produce side effects. Takes read-only input parameters and returns write-only output parameters. If the same variable is passed as an input and output, then some optimizations can be applied. For example a variable could end up being passed as a reference, or it could be passed by value with deep copy. Control flow is returned back to the caller.
 
-For example, the following function takes 2 input variables and returns 3 output variables:
+For example, the following function takes 1 input variables and returns 1 output variable:
 
 ```rust
 let a = 1;
@@ -416,9 +416,9 @@ let addTwo = ~{
 let c = addTwo!(a);
 ```
 
-The original variables `a` is not modified. It is passed by value.
+The original variable `a` is not modified. It is passed by value.
 
-The variables `c` is write-only from the function's point of view.
+The variable `c` is write-only from the function's point of view.
 
 ```rust
 let a = 1;
