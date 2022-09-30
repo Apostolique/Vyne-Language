@@ -407,44 +407,40 @@ For example, the following function takes 2 input variables and returns 3 output
 
 ```rust
 let a = 1;
-let b = 2;
 
-let c, d, e = function(a, b);
-
-let function = (f, g) {
-    f += 1;
-    g += 1;
-    let h = 3;
-    return f, g, h;
+let addTwo = ~{
+    .b += 2;
+    return b;
 }
+
+let c = addTwo!(a);
 ```
 
-The original variables `a` and `b` are not modified. They are passed by value.
+The original variables `a` is not modified. It is passed by value.
 
-The variables `c`, `d`, `e` are write-only from the function's point of view.
+The variables `c` is write-only from the function's point of view.
+
+```rust
+let a = 1;
+
+let addTwo = ~{
+    .b += 2;
+    return b;
+}
+
+a = addTwo!(a);
+```
+
+In the example above, the caller gives explicit permission to the function to modify `a`. As such it is passed by reference.
 
 ```rust
 let a = 1;
 let b = 2;
 
-a, b = function(a, b);
+a, b = swap!(a, b);
 
-let function = (c, d) {
-    c += 1;
-    d += 1;
-    return c, d;
-}
-```
-
-In the example above, the caller gives explicit permission to the function to modify `a` and `b`. As such they are passed by reference.
-
-```rust
-let a = 1;
-let b = 2;
-
-a, b = function(a, b);
-
-let function = (c, d) {
+let swap = ~{
+    .c; .d;
     return d, c;
 }
 ```
