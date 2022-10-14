@@ -324,6 +324,13 @@ a.X = 15;
 
 This can be used to define reusable code.
 
+Can also be used like this:
+
+```rust
+let a = ~1;
+let b = a!;
+```
+
 #### :small_orange_diamond: Label
 
 It is possible to add labels to some statements.
