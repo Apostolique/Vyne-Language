@@ -7,7 +7,6 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 
 ## Index
 * [Goals](#goals)
-* [Far Fetched Goals](#far-fetched-goals)
 * [Notes](#notes)
 * [Features](#features)
   * [Comments](#comments)
