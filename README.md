@@ -46,11 +46,6 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 * It should be cross-platform.
 * Compile parameters should be included within the source code.
 
-## Far Fetched Goals
-
-* Syntax agnostic. For example a simple loop has a condition and a code block. Syntax files could be written to define how to parse code. Within a file, parser information could be provided somehow. This would make it possible for a single project to have many files written with different syntax. Under all the syntax, you'd still have pure Vyne.
-* Ability to execute compiled and non compiled code side by side. This would make it possible to keep parts of a project uncompiled allowing runtime code editing.
-
 ## Notes
 
 The syntax shown in this document is tentative. Only used as a proof of concept.
