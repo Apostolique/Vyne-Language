@@ -410,8 +410,8 @@ For example, the following function takes 1 input variable and returns 1 output 
 let a = 1;
 
 let addTwo = ~{
-    .b += 2;
-    return b;
+    in b += 2;
+    out b;
 }
 
 let c = addTwo(a)!;
@@ -425,8 +425,8 @@ The variable `c` is write-only from the function's point of view.
 let a = 1;
 
 let addTwo = ~{
-    .b += 2;
-    return b;
+    in b += 2;
+    out b;
 }
 
 a = addTwo(a)!;
@@ -439,8 +439,8 @@ let a = 1;
 let b = 2;
 
 let swap = ~{
-    .c; .d;
-    return d, c;
+    in c, d;
+    out d, c;
 }
 
 a, b = swap(a, b)!;
