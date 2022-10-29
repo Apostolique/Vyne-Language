@@ -33,8 +33,7 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
     * [Break](#small_orange_diamond-break)
     * [Continue](#small_orange_diamond-continue)
   * [Subroutines](#subroutines)
-    * [Function type 1](#small_orange_diamond-function-type-1)
-    * [Function type 2](#small_orange_diamond-function-type-2)
+    * [Function](#small_orange_diamond-function)
   * [Boolean operators](#boolean-operators)
   * [Scope](#scope)
   * [Numbers Syntax Sugar](#numbers-syntax-sugar)
@@ -396,13 +395,9 @@ while :outer condition {
 
 ### Subroutines
 
-#### :small_orange_diamond: Function type 1
+#### :small_orange_diamond: Function
 
-Type 1 works similar to functions in other languages. Takes input parameters and returns output parameters. Control flow is returned back to the caller.
-
-#### :small_orange_diamond: Function type 2
-
-Type 2 doesn't have the ability to produce side effects. Takes read-only input parameters and returns write-only output parameters. If the same variable is passed as an input and output, then some optimizations can be applied. For example a variable could end up being passed as a reference, or it could be passed by value with deep copy. Control flow is returned back to the caller.
+Doesn't have the ability to produce side effects. Takes read-only input parameters and returns write-only output parameters. If the same variable is passed as an input and output, then some optimizations can be applied. For example a variable could end up being passed as a reference, or it could be passed by value with deep copy. Control flow is returned back to the caller.
 
 For example, the following function takes 1 input variable and returns 1 output variable:
 
@@ -447,8 +442,6 @@ a, b = swap(a, b)!;
 ```
 
 This last one could be used to swap variables.
-
-A type 2 function can only call other type 2 functions to preserve the no side effect property.
 
 ### Boolean operators
 
