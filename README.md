@@ -443,6 +443,17 @@ a, b = swap(a, b)!;
 
 This last one could be used to swap variables.
 
+Combined with the delay expression and a deferred block, it's possible to get something similar to a class.
+
+```rust
+let Point = ~{+>
+    in X;
+    in Y;
+};
+
+let a = Point(10, 20)!;
+```
+
 ### Boolean operators
 
 Currently proposed boolean operators:
