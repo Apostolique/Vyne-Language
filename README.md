@@ -93,7 +93,7 @@ Loose multiline comment terminators are ignored as whitespace:
 Casting is done after the value. Given two types `A` and `B` where `B` exposes a function called `Foo`.
 
 ```csharp
-A a;
+let a: A;
 
 a:B.Foo();
 ```
