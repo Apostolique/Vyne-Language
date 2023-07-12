@@ -5,39 +5,6 @@ Definition for the Vyne Programming language. The Vyne language is an imaginary 
 
 [![Discord](https://img.shields.io/discord/530598289813536771.svg)](https://discord.gg/dHkA4bP)
 
-## Index
-* [Goals](#goals)
-* [Notes](#notes)
-* [Features](#features)
-  * [Comments](#comments)
-  * [Casting](#casting)
-  * [Blocks](#blocks)
-    * [Basic](#small_orange_diamond-basic)
-    * [Deferred](#small_orange_diamond-deferred)
-    * [Paralleled](#small_orange_diamond-paralleled)
-  * [Block Chaining](#block-chaining)
-    * [Else](#small_orange_diamond-else)
-    * [Then](#small_orange_diamond-then)
-  * [Choices](#choices)
-    * [If](#small_orange_diamond-if)
-    * [Switch](#small_orange_diamond-switch)
-  * [Loops](#loops)
-    * [Loop](#small_orange_diamond-loop)
-    * [While](#small_orange_diamond-while)
-    * [For](#small_orange_diamond-for)
-    * [Do while](#small_orange_diamond-do-while)
-    * [Foreach](#small_orange_diamond-foreach)
-  * [General Statements](#general-statements)
-    * [Delay expression](#small_orange_diamond-delay-expression)
-    * [Label](#small_orange_diamond-label)
-    * [Break](#small_orange_diamond-break)
-    * [Continue](#small_orange_diamond-continue)
-  * [Subroutines](#subroutines)
-    * [Function](#small_orange_diamond-function)
-  * [Boolean operators](#boolean-operators)
-  * [Scope](#scope)
-  * [Numbers Syntax Sugar](#numbers-syntax-sugar)
-
 ## Goals
 
 * The Vyne language is a general purpose programming language.
