@@ -1,5 +1,5 @@
 # Vyne-Language
-Definition for the Vyne Programming language. The Vyne language is an imaginary programming language. There are no known compilers that exist yet. (Work on a compiler has been started [here](https://github.com/Apostolique/Vyne-Compiler).)
+Definition for the Vyne Programming language. The Vyne language is an imaginary programming language. There are no known compilers that exist yet.
 
 ## Discord
 
