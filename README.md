@@ -271,6 +271,8 @@ The delay expression is used to delay the execution of a block. It can be used t
 ~{
     // Some code.
     // It will never be executed.
+    // Can be useful for code that you still want the compiler to check and throw errors on.
+    // It would be optimized out in the final assembly if the block isn't caught.
 }
 ```
 
